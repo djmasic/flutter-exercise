@@ -27,7 +27,7 @@ void main() {
     test('starts at 0', () async {
       // Use the `driver.getText` method to verify the counter starts at 0.
       // await driver.runUnsynchronized(() async {
-      expect(await driver.getText(counterTextFinder), "0");
+      expect(await driver.getText(counterTextFinder), "2");
       // });
     });
 
