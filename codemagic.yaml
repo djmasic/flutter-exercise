@@ -23,7 +23,7 @@ workflows:
       - name: Launch emulator
         script: flutter emulators --launch emulator
       - name: Run tests
-        script: flutter drive --target=test_driver/e2e.dart
+        script: flutter drive --target test_driver/e2e.dart
     artifacts:
       - build/**/outputs/**/*.aab
     publishing:
