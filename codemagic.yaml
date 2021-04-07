@@ -10,6 +10,13 @@ workflows:
       cache_paths:
         - ~/.pub-cache
     triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: "*"
+          include: true
+          source: true
+      cancel_previous_builds: false
     scripts:
       - name: Build for Android # Name of the section
         script: flutter build android # The script(s) to be run in that section
@@ -18,4 +25,7 @@ workflows:
       - name: Run tests
         script: flutter drive --target=test_driver/e2e.dart
     artifacts:
+      - build/**/outputs/**/*.aab
     publishing:
+      scripts:
+        - echo 'Post-publish script'
