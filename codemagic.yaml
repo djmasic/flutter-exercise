@@ -19,7 +19,7 @@ workflows:
       cancel_previous_builds: false
     scripts:
       - name: Build for Android # Name of the section
-        script: flutter build android # The script(s) to be run in that section
+        script: flutter build apk # The script(s) to be run in that section
       - name: Launch emulator
         script: flutter emulators --launch emulator
       - name: Run tests
