@@ -7,6 +7,8 @@ workflows:
       flutter: stable
       xcode: latest
     cache:
+      cache_paths:
+        - ~/.pub-cache
     triggering:
     scripts:
       - name: Build for Android # Name of the section
