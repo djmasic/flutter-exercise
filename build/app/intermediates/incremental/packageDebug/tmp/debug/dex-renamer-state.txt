@@ -1,4 +1,0 @@
-#Tue Apr 06 16:57:51 CEST 2021
-base.0=/Users/dj.masic/Projects/Exercises/flutter-exercises/flutter_exercisses/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
