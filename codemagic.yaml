@@ -22,8 +22,8 @@ workflows:
         script: flutter build apk # The script(s) to be run in that section
       - name: Launch emulator
         script: flutter emulators --launch emulator
-      - name: Run tests
         script: flutter drive --target test_driver/e2e.dart
+      # - name: Run tests
     artifacts:
       - build/**/outputs/**/*.aab
     publishing:
