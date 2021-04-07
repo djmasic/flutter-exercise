@@ -25,7 +25,7 @@ workflows:
         script: flutter drive --target test_driver/e2e.dart
       # - name: Run tests
     artifacts:
-      - build/**/outputs/**/*.aab
+      - build/**/outputs/**/*.apk
     publishing:
       scripts:
         - echo 'Post-publish script'
